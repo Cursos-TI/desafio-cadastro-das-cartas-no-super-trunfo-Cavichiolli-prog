@@ -1,22 +1,46 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+int main(){
+    int Estado;
+    char codigodacarta[50];
+    char Nomedacidade[50];
+    int Populacao;
+    float Area;
+    float Pib;
+    int Numerodepontosturisticos;
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+
+    printf("Digite o estado da carta: \n");
+    scanf("%d", &Estado);
+
+    printf("Digite o codigo da carta: \n");
+    scanf("%s", codigodacarta);
+
+    printf("Digite o Nome da cidade: \n");
+    scanf("%s", Nomedacidade);
+
+    printf("Digite a populacao da cidade:\n");
+    scanf("%d", &Populacao);
+
+    printf("Digite a area da cidade: \n");
+    scanf("%f", &Area);
+
+    printf("Digite o PIB da cidade: \n");
+    scanf("%f", &Pib);
+
+    printf("Digite o numero de pontos turisticos da cidade: \n");
+    scanf("%d", &Numerodepontosturisticos);
+
+    printf("Estado: %d\n", Estado);
+    printf("Codigo da carta: %s\n", codigodacarta);
+    printf("Nome da cidade: %s\n", Nomedacidade);
+    printf("Populacao: %d\n", Populacao);
+    printf("Area: %.2f\n", Area);
+    printf("PIB: %.2f\n", Pib);
+    printf("Numero de pontos turisticos: %d\n", Numerodepontosturisticos);
+
 
     return 0;
+
+
 }
